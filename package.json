@@ -10,7 +10,8 @@
     "build:ui": "rm -rf build && cd ../full-stack-open/part2/phonebook && npm run build && cp -r build ../../../full-stack-open-backend",
     "deploy": "flyctl deploy",
     "deploy:full": "npm run build:ui && npm run deploy",
-    "logs:prod": "flyctl logs"
+    "logs:prod": "flyctl logs",
+    "lint": "npx eslint ."
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,7 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {
+    "eslint": "^8.29.0",
     "nodemon": "^2.0.20"
   }
 }
